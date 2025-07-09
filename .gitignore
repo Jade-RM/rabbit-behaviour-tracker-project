@@ -1,0 +1,13 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor settings
+.vscode/
+
+# Local cache
+*.local
+*.cache
