@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rabbit Behavior Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h2>Rabbit Behaviour Tracker</h2>
+
+  <div id="tracker">
+
+    <label for="select-rabbit">Select Rabbit:</label>
+    <select id="select-rabbit">
+      <option value="rabbit1">Rabbit 1</option>
+      <option value="rabbit2">Rabbit 2</option>
+    </select>
+
+    <label>
+      <input type="checkbox" id="together-checkbox" />
+      They are doing this together
+    </label>
+
+    <div id="buttons">
+      <button data-behavior="Eating">Eating</button>
+      <button data-behavior="Grooming">Grooming</button>
+      <button data-behavior="Exploring">Exploring</button>
+      <button data-behavior="Resting">Resting</button>
+      <button data-behavior="Hiding">Hiding</button>
+      <button data-behavior="Thumping">Thumping</button>
+      <button data-behavior="Jumping">Jumping</button>
+	  <br>
+      <button data-behavior="Running">Running</button>
+      <button data-behavior="Playing">Playing</button>
+      <button data-behavior="Cuddling">Cuddling</button>
+      <button data-behavior="Interacting">Interacting</button>
+      <button data-behavior="Chewing">Chewing</button>
+	  <button data-behavior="Flopping">Flopping</button>
+	  <button data-behavior="Alert">Alert or Waiting</button>
+	  <br>
+      <button id="reset-btn">Reset Logs</button>
+      <button id="export-btn">Export CSV</button>
+    </div>
+
+    <div id="notes">
+      <label for="note-input">Quick Note:</label>
+      <input
+        type="text"
+        id="note-input"
+        placeholder="E.g. After feeding or loud noise"
+        style="width: 300px;"
+      />
+    </div>
+
+    <p id="summary" style="margin-top: 10px; font-weight: bold;"></p>
+    <svg id="chart" width="800" height="300"></svg>
+
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
