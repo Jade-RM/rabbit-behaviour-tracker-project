@@ -113,7 +113,7 @@ chart.selectAll("*").remove();
   // Setup dimensions for chart
 const width = +chart.attr("width");
 const height = +chart.attr("height");
-const margin = { top: 20, right: 20, bottom: 30, left: 20 };
+const margin = { top: 20, right: 20, bottom: 30, left: 30 };
 
 const x = d3.scaleBand()
   .domain(data.map(d => d.behavior))
