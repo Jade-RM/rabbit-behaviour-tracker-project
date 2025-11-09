@@ -10,3 +10,4 @@ Data was collected by observing a pair of bonded rabbits for one month in order 
 "What is the distribution of daily shared and solo activities of bonded rabbits, and which behaviours occur most frequently?"
 
 The analysed data will then be used to create a model to predict the behaviour of bonded pet rabbits.
+Further data is currently being collected for this project to improve predictability of the model.
